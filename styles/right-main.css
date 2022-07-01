@@ -1,0 +1,88 @@
+#right-main {
+    /* border: 5px solid #0a5aff; */
+    box-shadow: 0 0 10px 3px #777;
+    width: 40%;
+    border-radius: 20px;
+    height: 525px;
+    padding: 7px;
+}
+
+#right-main h2 {
+    text-align: center;
+}
+
+#complete,
+#incomplete {
+    overflow-y: scroll;
+    max-height: 245px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+#incomplete {
+    border-bottom: 5px double #0a5aff;
+}
+
+.itemUnCompleted,
+.itemCompleted {
+    border-radius: 10px;
+    padding: 15px 25px;
+    margin-bottom: 13px;
+    box-shadow: 0 0 5px 1px #666;
+}
+
+.itemUnCompleted {
+    background: linear-gradient(to top left, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgba(255, 0, 0, 0.5));
+}
+
+.itemUnCompleted:hover {
+    background: linear-gradient(to top left, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgba(255, 0, 0, 0.8));
+    box-shadow: 0 0 10px 1px #666;
+}
+
+.itemCompleted {
+    background: linear-gradient(to top left, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgba(0, 255, 0, 0.5));
+}
+
+.itemCompleted:hover {
+    background: linear-gradient(to top left, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgba(0, 255, 0, 0.8));
+    box-shadow: 0 0 10px 1px #666;
+}
+
+.action {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.action .green,
+.action .orange,
+.action .red {
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 5px 10px;
+    margin: 5px 3px 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.action .green:hover,
+.action .orange:hover,
+.action .red:hover {
+    opacity: 0.8;
+}
+
+.action .green {
+    border-color: #0f0;
+    background-color: #0f0;
+}
+
+.action .orange {
+    border-color: orange;
+    background-color: orange;
+}
+
+.action .red {
+    border-color: #a00;
+    background-color: #a00;
+    color: #fff;
+}
